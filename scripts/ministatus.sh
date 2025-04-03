@@ -36,7 +36,8 @@ set_status() {
   r_delim="#[fg=#3c3836]/ "
   git_changes="$($current_dir/git.sh)"
   $ts -ga status-left " #[fg=#b16286, bold]#S$l_delim#[fg=#98971a]"
-  $ts -ga status-right "$git_changes $r_delim#[fg=#98971a, bold]%H:%M "
+  # $ts -ga status-right "$git_changes $r_delim#[fg=#98971a, bold]%H:%M "
+  $ts -ga status-right "$r_delim#[fg=#98971a, bold]%H:%M "
 }
 
 set_window() {
